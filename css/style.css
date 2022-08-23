@@ -1,0 +1,22 @@
+@import url(config_global.css);
+@import url(nav.css);
+
+.container {
+    height: 100%;
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.container-nav, .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: var(--color-primary);
+    padding: 15px;
+    font-weight: bold;
+    color: var(--color-tertiary);
+}

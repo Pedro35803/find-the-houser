@@ -1,0 +1,26 @@
+@import url(config_global.css);
+
+.nav {
+    height: 90px;
+    background-color: #000500;
+}
+
+.nav-titulo {
+    color: var(--color-primary);
+    font-size: 36px;
+}
+
+.menu {
+    width: 400px;
+    list-style: none;
+}
+
+.menu-link {
+    color: var(--color-tertiary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-menu {
+    box-shadow: 4px 16px 26px rgba(71, 59, 240, 0.3);
+}
