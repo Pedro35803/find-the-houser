@@ -12,30 +12,44 @@
         <nav class="nav">
             <section class="container container-nav">
                 <h1 class="nav-titulo">Find The House</h1>
+
+                <input type="checkbox" id="menu-control" class="menu-control">
     
-                <ul class="menu">
-                    <li>
-                        <a class="menu-link" href="#">Home</a>
-                    </li>
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li>
+                            <a class="links-menu" href="#">Home</a>
+                        </li>
+    
+                        <li>
+                            <a class="links-menu" href="#">Testemunhos</a>
+                        </li>
+    
+                        <li>
+                            <a class="links-menu" href="#">Contato</a>
+                        </li>
+    
+                        <li>
+                            <button class="button button-menu">Comprar Agora</button>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li>
-                        <a class="menu-link" href="#">Testemunhos</a>
-                    </li>
-
-                    <li>
-                        <a class="menu-link" href="#">Contato</a>
-                    </li>
-
-                    <li>
-                        <button class="button button-menu">Comprar Agora</button>
-                    </li>
-                </ul>
+                <label for="menu-control" class="menu-icon">
+                    <section class="menu-hamburguer" alt="Menu">
+                        <div class="hamburguer-line"></div>
+                        <div class="hamburguer-line"></div>
+                        <div class="hamburguer-line"></div>
+                    </section>
+                </label>
             </section>
         </nav>
 
         <section class="start">
-            <p>Encontre a casa dos seus sonhos por um valor acessível.</p>
-            <img src="img/arrow_down.svg">
+            <div class="container container-start">
+                <h1 class="start-title">Encontre a casa dos seus sonhos por um valor acessível.</h1>
+                <img class="start-arrow" src="img/arrow_down.svg">
+            </div>
         </section>
 
         <section class="houses"></section>
