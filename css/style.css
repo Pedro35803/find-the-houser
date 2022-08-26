@@ -19,4 +19,5 @@
     padding: 15px;
     font-weight: bold;
     color: var(--color-tertiary);
+    cursor: pointer;
 }
