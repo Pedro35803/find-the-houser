@@ -1,9 +1,5 @@
 @import url(config_global.css);
 
-:root {
-    --preto: #000500;
-}
-
 .nav {
     height: max(15vh, 75px);
     max-height: 125px;
@@ -19,7 +15,7 @@
     width: 400px;
 }
 
-.menu-link {
+.menu-links {
     list-style: none;
 }
 
@@ -55,6 +51,19 @@
     width: 25px;
     height: 3px;
     margin: 7px;
+    transition: transform var(--temp-animation);
+}
+
+.menu-hamburguer.active .line_01 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu-hamburguer.active .line_02 {
+    opacity: 0;
+}
+  
+.menu-hamburguer.active .line_03 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 
 /* Controle da Responsividade do menu */
@@ -62,7 +71,6 @@
 .menu-control {
     display: none;
 }
-
 
 .menu-icon {
     display: none;
@@ -77,9 +85,33 @@
     transform: translateX(0);
 }
 
+/* Animação dos links se aproximando ao apertar o menu hamburgue */
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(130px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
 /* Responsividade */
 
 @media (max-width: 775px) {
+    .nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    .start {
+        margin-top: 15vh;
+    }
+
     .menu {
         background-color: var(--preto);
         box-shadow: -3px 0px 11px 13px rgba(0, 0, 0, 0.4);
@@ -100,6 +132,7 @@
 
     .menu-links {
         height: 70%;
+        z-index: 1;
     }
 
     .menu-links, .menu {
@@ -110,13 +143,24 @@
         align-items: center;
     }
 
+    .menu-links li {
+        opacity: 0;
+    }
+
     .menu-icon {
         display: inline-block;
         z-index: 1;
     }
 
     .menu-icon:hover {
-        /* filter: sepia(2%) saturate(68%) brightness(100%) contrast(93%); */
         filter: brightness(2);
+    }
+
+    .links-menu {
+        font-size: 24px;
+    }
+
+    .button-menu {
+        font-size: 16px;
     }
 }
