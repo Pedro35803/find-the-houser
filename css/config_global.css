@@ -12,13 +12,19 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Switzer', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Switzer, sans-serif;
 }
 
 @font-face {
-    font-family: 'Switzer';
-    src: url(../fonts/Switzer-Bold.ttf) format('truetype'), 
+    font-family: Switzer;
+    src: url(../fonts/Switzer-Bold.ttf) format('truetype'),
     url(../fonts/Switzer-Bold.otf) format('opentype'),
     url(../fonts/Switzer-Medium.ttf) format('truetype'),
-    url(../fonts/Switzer-Medium.otf) format('opentype');
+    url(../fonts/Switzer-Medium.otf) format('opentype'),
+    url(../fonts/Switzer-Light.ttf) format('truetype'),
+    url(../fonts/Switzer-Light.otf) format('opentype');
 }

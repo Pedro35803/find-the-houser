@@ -8,6 +8,10 @@
     background-position: center 100%;
 }
 
+.benefits {
+    height: 500px;
+}
+
 .container {
     height: 100%;
     width: 90%;
@@ -28,12 +32,25 @@
     justify-content: center;
 }
 
-/* Container Start */
+.container-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benefits-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container Start, Seção inicial */
 
 .start-title {
     width: min(100%, 25ch);
     color: var(--color-tertiary);
-    font-family: Switzer;
+    font-weight: bold;
     font-size: 64px;
     line-height: 1em;
 }
@@ -44,6 +61,20 @@
     position: absolute;
     align-self: center;
     bottom: 25px;
+}
+
+/* Container Benefits, Seção com os beneficios */
+
+.benefits-item {
+    color: var(--color-primary);
+    text-align: center;
+    height: 210px;
+    width: 200px;
+    margin: 5px;
+}
+
+.benefits-item > p {
+    font-weight: normal;
 }
 
 /* Botões */
