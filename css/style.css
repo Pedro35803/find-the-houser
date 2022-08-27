@@ -70,7 +70,7 @@
     color: var(--color-primary);
     text-align: center;
     line-height: 1em;
-    
+
     height: 200px;
     width: 180px;
     margin: 0 5px;
@@ -90,4 +90,24 @@
     cursor: pointer;
     padding: 15px;
     transition: background var(--temp-animation);
+}
+
+/* Responsividade */
+
+@media (max-width: 550px) { 
+    .start-arrow {
+        bottom: 0;
+    }
+
+    .start-title {
+        font-size: 58px
+    }
+
+    .benefits {
+        height: 550px;
+    }
+
+    .benefits-item {
+        height: 185px;
+    }
 }
