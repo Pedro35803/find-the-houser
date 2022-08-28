@@ -16,6 +16,8 @@
 }
 
 body {
+    background: var(--color-tertiary);
+    color: var(--color-primary);
     font-family: Switzer, sans-serif;
 }
 
