@@ -3,7 +3,6 @@
 
 .start {
     height: min(85vh, 750px);
-    background: url(../img/start_bg.jpg) no-repeat;
     background: var(--color-primary) url(../img/start_bg.jpg) no-repeat;
     background-position: center 100%;
 }
@@ -18,16 +17,21 @@
     padding: 40px 0 80px;
 }
 
+.testimonies {
+    padding: 40px;
+}
+
 /* Posicionamento de elementos dos containers */
 
 .container {
     height: 100%;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.container-nav, .menu-links {
+.container-nav, .menu-links,
+.container-testimonies, .card-testimonies {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,6 +61,23 @@
 .benefits-item, .housers {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.card-main,
+.testimonies-section,
+.three-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonies-header-profile,
+.testimonies-card-commentary,
+.testimonies-header,
+.card-testimonies,
+.testimonies-profile {
+    display: flex;
     align-items: center;
 }
 
@@ -102,23 +123,117 @@
 }
 
 .housers-text {
-    text-align: center;
     color: var(--color-tertiary);
-    margin-bottom: 35px;
-}
-
-.housers-title {
-    font-size: 42px;
-}
-
-.housers-description {
-    font-size: 21px;
-    margin-bottom: 10px;
 }
 
 .housers-img {
     width: 100%;
     max-width: 350px;
+}
+
+/* Container Testemunhas */
+
+.card {
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    box-shadow: 4px 16px 30px rgba(71, 59, 240, 0.2);
+    color: var(--color-tertiary);
+}
+
+.card-main,
+.testimonies-section {
+    height: 275px;
+}
+
+/** 
+* Cards principal e maior
+**/
+
+.card-main {
+    width: 600px;
+    padding: 25px 40px;
+}
+
+.testimonies-header {
+    position: relative;
+}
+
+.header-profile-image {
+    height: 120px;
+    margin-right: 12px;
+}
+
+.header-profile-name {
+    font-size: 30px;
+}
+
+.testimonies-header-star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: flex-end;
+    height: 47.5px;
+}
+
+.card-commentary-line {
+    background: var(--color-tertiary);
+    height: 90px;
+    width: 15px;
+    margin: 0 20px 0 15px;
+}
+
+.card-commentary-text {
+    line-height: 1em;
+    font-size: 18px;
+}
+
+/** 
+* Cards menores
+**/
+
+.card-testimonies {
+    width: 450px;
+    height: 80px;
+    padding: 5px 20px;
+}
+
+.profile-image {
+    height: 67px;
+    margin-right: 12px;
+}
+
+.profile-name {
+    font-size: 20px;
+}
+
+.three-dots {
+    height: 30px;
+    cursor: pointer;
+}
+
+.dot {
+    height: 6.5px;
+    width: 6.5px;
+    background: var(--color-tertiary);
+    border-radius: 50px;
+}
+
+/* Texto */
+
+.section-text {
+    text-align: center;
+    margin: 0 20px 40px;
+}
+
+.section-text > .paragraph {
+    margin-bottom: 10px;
+}
+
+.title {   
+    font-size: 42px;
+}
+
+.paragraph {
+    font-size: 21px;
 }
 
 /* Botões */

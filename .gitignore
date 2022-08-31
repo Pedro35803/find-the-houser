@@ -1,0 +1,5 @@
+# Arquivos de configuração do VsCode
+/.vscode
+
+# Arquivos locais para trabalhar com algum estilo espercifico do site
+test.html
