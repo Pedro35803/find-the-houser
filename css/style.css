@@ -18,7 +18,7 @@
 }
 
 .testimonies {
-    padding: 40px;
+    padding: 40px 0;
 }
 
 /* Posicionamento de elementos dos containers */
@@ -138,6 +138,11 @@
 
 /* Container Testemunhas */
 
+.container-testimonies {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .card {
     background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     box-shadow: 4px 16px 30px rgba(71, 59, 240, 0.2);
@@ -200,8 +205,14 @@
 * Cards menores
 **/
 
+.testimonies-section,
 .card-testimonies {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
+    min-width: 250px;
+}
+
+.card-testimonies {
     height: 80px;
     padding: 5px 20px;
 }
@@ -284,5 +295,9 @@
 
     .benefits-item {
         height: 185px;
+    }
+
+    .testimonies-header-star {
+        display: none;
     }
 }
