@@ -129,6 +129,11 @@
 .housers-img {
     width: 100%;
     max-width: 350px;
+    transition: var(--temp-animation);
+}
+
+.housers-img:hover {
+    filter: opacity(0.9) grayscale(0.1) brightness(0.95);
 }
 
 /* Container Testemunhas */
@@ -137,6 +142,11 @@
     background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     box-shadow: 4px 16px 30px rgba(71, 59, 240, 0.2);
     color: var(--color-tertiary);
+    transition: var(--temp-animation);
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-main,
@@ -199,6 +209,16 @@
 .profile-image {
     height: 67px;
     margin-right: 12px;
+}
+
+.header-profile-image,
+.profile-image {
+    transition: var(--temp-animation);
+}
+
+.header-profile-image:hover,
+.profile-image:hover {
+    filter: grayscale(0.6);
 }
 
 .profile-name {
