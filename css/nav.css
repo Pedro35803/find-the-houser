@@ -1,8 +1,7 @@
 @import url(config_global.css);
 
 .nav {
-    height: max(15vh, 75px);
-    max-height: 125px;
+    height: clamp(70px, 15vh, 125px);
     background-color: var(--preto);
 }
 
@@ -49,6 +48,7 @@
     background: var(--preto);
     width: 25px;
     height: 3px;
+    
     margin: 7px;
     transition: transform var(--temp-animation);
 }
@@ -67,17 +67,13 @@
 
 /* Controle da Responsividade do menu */
 
-.menu-control {
+.menu-control,
+.menu-icon {
     display: none;
 }
 
 .menu-icon {
-    display: none;
     cursor: pointer;
-}
-
-.menu-icon img {
-    height: 20px;
 }
 
 .menu-control:checked + .menu {
