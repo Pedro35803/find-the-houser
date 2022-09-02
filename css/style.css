@@ -72,11 +72,9 @@
     justify-content: space-between;
 }
 
-.testimonies-header-profile,
-.testimonies-card-commentary,
-.testimonies-header,
-.card-testimonies,
-.testimonies-profile {
+.testimonies-commentary,
+.testimonies-profile,
+.card-testimonies {
     display: flex;
     align-items: center;
 }
@@ -135,6 +133,10 @@
     gap: 20px;
 }
 
+.testimonies-profile {
+    position: relative;
+}
+
 .card {
     background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     box-shadow: 4px 16px 30px rgba(71, 59, 240, 0.2);
@@ -151,8 +153,18 @@
     height: 275px;
 }
 
+.profile-image-main,
+.profile-image {
+    transition: var(--temp-animation);
+}
+
+.profile-image-main:hover,
+.profile-image:hover {
+    filter: grayscale(0.6);
+}
+
 /** 
-* Cards principal e maior
+* Card principal, o maior
 **/
 
 .card-main {
@@ -160,20 +172,16 @@
     padding: 25px 40px;
 }
 
-.testimonies-header {
-    position: relative;
-}
-
-.header-profile-image {
+.profile-image-main {
     height: 120px;
     margin-right: 12px;
 }
 
-.header-profile-name {
+.profile-name-main {
     font-size: 30px;
 }
 
-.testimonies-header-star {
+.profile-star {
     position: absolute;
     top: 0;
     right: 0;
@@ -181,14 +189,14 @@
     height: 47.5px;
 }
 
-.card-commentary-line {
+.commentary-line {
     background: var(--color-tertiary);
     height: 90px;
     width: 15px;
     margin: 0 20px 0 15px;
 }
 
-.card-commentary-text {
+.commentary-text {
     line-height: 1em;
     font-size: 18px;
 }
@@ -210,16 +218,6 @@
 .profile-image {
     height: 67px;
     margin-right: 12px;
-}
-
-.header-profile-image,
-.profile-image {
-    transition: var(--temp-animation);
-}
-
-.header-profile-image:hover,
-.profile-image:hover {
-    filter: grayscale(0.6);
 }
 
 .profile-name {
