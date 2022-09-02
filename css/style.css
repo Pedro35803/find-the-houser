@@ -139,7 +139,6 @@
 /* Container Testemunhas */
 
 .container-testimonies {
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -279,6 +278,13 @@
 }
 
 /* Responsividade */
+
+@media (max-width: 1000px) { 
+    .container-testimonies {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 550px) { 
     .start-arrow {
