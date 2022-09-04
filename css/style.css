@@ -17,7 +17,8 @@
     padding: 40px 0 80px;
 }
 
-.testimonies {
+.testimonies,
+.contact {
     padding: 40px 0;
 }
 
@@ -66,7 +67,8 @@
 
 .card-main,
 .testimonies-section,
-.three-dots {
+.three-dots,
+.contact-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -238,6 +240,46 @@
     border-radius: 50px;
 }
 
+/* Container Contatos */
+
+.container-contact, 
+.form-topic {
+    display: flex;
+    align-items: center;
+}
+
+.contact-image {
+    width: 40%;
+    margin-right: 25px;
+}
+
+.contact-image img {
+    width: calc(100% - 10px);
+    max-width: 466px;
+    height: 460px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.contact-form {
+    width: 60%;
+    gap: 25px;
+}
+
+.form-topic {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.form-topic img {
+    margin-right: 15px;
+}
+
+.form-button {
+    font-size: 18px;
+    padding: 10px;
+}
+
 /* Texto */
 
 .section-text {
@@ -253,7 +295,7 @@
     font-size: 21px;
 }
 
-/* Botões */
+/* Botões e input */
 
 .button {
     background-color: var(--color-primary);
@@ -263,6 +305,28 @@
     cursor: pointer;
     padding: 15px;
     transition: background var(--temp-animation);
+}
+
+.button:hover {
+    background: var(--color-secondary);
+}
+
+.input {
+    background: var(--color-tertiary);
+    border: 2px solid #6361DF;
+    height: 35px;
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.input::placeholder {
+    font-size: 12px;
+}
+
+.input-area {
+    height: 150px;
+    font-family: var(--font);
+    resize: none;
 }
 
 /* Responsividade */
@@ -275,6 +339,14 @@
 
     .benefits {
         height: 475px;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .contact-form {
+        width: 100%;
     }
 }
 

@@ -5,6 +5,7 @@
     --preto: #000500;
     
     --temp-animation: 0.25s ease;
+    --font: Switzer, sans-serif;
 }
 
 * {
@@ -18,7 +19,7 @@
 body {
     background: var(--color-tertiary);
     color: var(--color-primary);
-    font-family: Switzer, sans-serif;
+    font-family: var(--font);
 }
 
 @font-face {
