@@ -1,0 +1,70 @@
+@import url(config_global.css);
+
+.footer {
+    color: var(--color-tertiary);
+}
+
+.footer-primary {
+    background: var(--color-primary);
+    height: 250px;
+}
+
+.footer-line {
+    background: var(--color-tertiary);
+    height: 150px;
+    width: 2px;
+    border-radius: 25px;
+    margin: 0 50px;
+}
+
+.footer-secondary {
+    height: 75px;
+    background: var(--preto);
+}
+
+.container-footer-secondary { 
+    position: relative;
+}
+
+.footer-link, 
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-link {
+    font-weight: bold;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.footer-social_networks {
+    position: absolute;
+    right: 0;
+    width: 150px;
+}
+
+.footer-social_networks img {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .footer-social_networks {
+        position: static;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-primary {
+        flex-direction: column;
+        height: 275px;
+    }
+
+    .footer-line {
+        width: 375px;
+        height: 2px;
+        margin: 20px 0;
+    }
+}
