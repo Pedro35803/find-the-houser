@@ -12,14 +12,17 @@
     height: 450px;
 }
 
-.housers {
-    background: linear-gradient(360deg, var(--color-secondary) 0%, var(--color-primary) 100%);
-    min-height: 650px;
+.housers,
+.contact {
     padding: 40px 0 80px;
 }
 
-.testimonies,
-.contact {
+.housers {
+    background: linear-gradient(360deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    min-height: 650px;
+}
+
+.testimonies {
     padding: 40px 0;
 }
 
