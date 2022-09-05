@@ -1,5 +1,7 @@
 const iconHamburgue = document.querySelector(".menu-hamburguer");
 const menuLinks = document.querySelectorAll(".menu-links li");
+const menuControl = document.querySelector("#menu-control");
+const links = document.querySelectorAll(".links-menu");
 
 const animateLinks = () => {
     menuLinks.forEach((link, index) => {
@@ -16,3 +18,11 @@ iconHamburgue.addEventListener("click", () => {
     iconHamburgue.classList.toggle("active");
     animateLinks();
 });
+
+links.forEach(link => link.addEventListener("click", () => {
+    const larguraTela = window.innerWidth;
+    if (menuControl.checked && larguraTela <= 775) {
+        menuControl.checked = false;
+        iconHamburgue.classList.toggle("active");
+    }
+}));

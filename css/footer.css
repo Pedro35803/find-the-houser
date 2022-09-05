@@ -18,7 +18,7 @@
 }
 
 .footer-secondary {
-    height: 75px;
+    height: 80px;
     background: var(--preto);
 }
 
@@ -46,8 +46,13 @@
     width: 150px;
 }
 
-.footer-social_networks img {
+.icon-social_network {
     cursor: pointer;
+    transition: var(--temp-animation);
+}
+
+.icon-social_network:hover {
+    filter: invert(33%) sepia(2%) saturate(68%) hue-rotate(314deg);
 }
 
 @media (max-width: 1000px) {
