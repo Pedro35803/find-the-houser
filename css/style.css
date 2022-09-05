@@ -379,11 +379,13 @@
 }
 
 @media (max-width: 550px) { 
-    .start-arrow {
-        bottom: 0;
-    }
-
     .start-title {
         font-size: 58px
+    }
+}
+
+@media (max-height: 450px) {
+    .start-arrow {
+        bottom: 0;
     }
 }

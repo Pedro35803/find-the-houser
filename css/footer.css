@@ -26,8 +26,7 @@
     position: relative;
 }
 
-.footer-link, 
-.footer-copyright {
+.footer-text {
     text-align: center;
 }
 
@@ -44,6 +43,7 @@
     position: absolute;
     right: 0;
     width: 150px;
+    min-width: 150px;
 }
 
 .icon-social_network {
