@@ -163,7 +163,8 @@
     }
 
     .menu-links {
-        height: 400px;
+        height: 85%;
+        max-height: 400px;
     }
 
     .links-menu {
