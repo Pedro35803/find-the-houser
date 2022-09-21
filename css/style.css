@@ -111,11 +111,29 @@
 }
 
 .start-arrow {
+    --_bottom: 20px;
     width: 35px;
     cursor: pointer;
     position: absolute;
     align-self: center;
-    bottom: 25px;
+    animation: arrow 4s infinite;
+}
+
+/* 
+* Animação de arco do start-arrow 
+* subindo e descendo
+*/
+
+@keyframes arrow {
+    0% {
+        bottom: var(--_bottom);
+    }
+    50% {
+        bottom: 0;
+    }
+    100% {
+        bottom: var(--_bottom);
+    }
 }
 
 /* Container Benefits, Seção com os beneficios */
@@ -423,6 +441,6 @@
 
 @media (max-height: 450px) {
     .start-arrow {
-        bottom: 0;
+        display: none;
     }
 }
