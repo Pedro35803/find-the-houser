@@ -378,9 +378,40 @@
     }
 }
 
+@media (max-width: 775px) {
+    .housers,
+    .contact {
+        padding: 65px 0 100px;
+    }
+
+    .testimonies {
+        padding: 65px 0 0;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+    
+    .paragraph {
+        font-size: 19px;
+    }
+
+    .profile-star {
+        height: 40px;
+    }
+}
+
 @media (max-width: 550px) { 
     .start-title {
-        font-size: 58px
+        font-size: 54px;
+    }
+
+    .profile-name-main {
+        font-size: 28px;
+    }
+
+    .profile-star {
+        display: none;
     }
 }
 
