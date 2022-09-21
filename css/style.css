@@ -8,6 +8,13 @@
     background-position: center 100%;
 }
 
+.benefits,
+.housers,
+.testimonies,
+.contact {
+    overflow-x: hidden;
+}
+
 .benefits {
     height: 450px;
 }

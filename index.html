@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Find The House</title>
 </head>
@@ -47,7 +48,7 @@
 
         <section class="start">
             <div class="container container-start">
-                <h1 class="start-title">Encontre a casa dos seus sonhos por um valor acessível.</h1>
+                <h1 class="start-title" data-aos="fade-right" data-aos-duration="600">Encontre a casa dos seus sonhos por um valor acessível.</h1>
                 <a class="start-arrow" href="#benefits">
                     <img src="img/arrow_down.svg">
                 </a>
@@ -56,25 +57,25 @@
 
         <section class="benefits" id="benefits">
             <div class="container container-benefits">
-                <span class="benefits-item">
+                <span class="benefits-item" data-aos="fade-right" data-aos-duration="750" data-aos-easing="ease-in-sine">
                     <img src="img/benefits_shield.svg">
                     <h2>Segurança</h2>
                     <p>Casas seguras, com sistemas de segurança avançado.</p>
                 </span>
 
-                <span class="benefits-item">
+                <span class="benefits-item" data-aos="fade-right" data-aos-duration="650" data-aos-easing="ease-in-sine">
                     <img src="img/benefits_spring.svg">
                     <h2>Consumo</h2>
                     <p>Consumo de energia ecológico, com uso de placas solares.</p>
                 </span>
 
-                <span class="benefits-item">
+                <span class="benefits-item" data-aos="fade-left" data-aos-duration="650" data-aos-easing="ease-in-sine">
                     <img src="img/benefits_sign.svg">
                     <h2>Custo</h2>
                     <p>Parcelas baratas, adaptáveis ao seu ganho mensal.</p>
                 </span>
 
-                <span class="benefits-item">
+                <span class="benefits-item" data-aos="fade-left" data-aos-duration="750" data-aos-easing="ease-in-sine">
                     <img src="img/benefits_connection.svg">
                     <h2>Conexão</h2>
                     <p>Casa totalmente conectada, usando a tecnologia IOT.</p>
@@ -89,12 +90,12 @@
             </header>
 
             <picture class="container container-housers">
-                <img class="housers-img" src="img/houser_01.jpg" alt="Uma imagem de uma casa">
-                <img class="housers-img" src="img/houser_02.jpg" alt="Uma imagem de uma casa">
-                <img class="housers-img" src="img/houser_03.jpg" alt="Uma imagem de uma casa">
-                <img class="housers-img" src="img/houser_04.jpg" alt="Uma imagem de uma casa">
-                <img class="housers-img" src="img/houser_05.jpg" alt="Uma imagem de uma casa">
-                <img class="housers-img" src="img/houser_06.jpg" alt="Uma imagem de uma casa">
+                <img class="housers-img" src="img/houser_01.jpg" alt="Uma imagem de uma casa" data-aos="fade-right" data-aos-duration="750" data-aos-easing="ease-in-sine">
+                <img class="housers-img" src="img/houser_02.jpg" alt="Uma imagem de uma casa" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-sine">
+                <img class="housers-img" src="img/houser_03.jpg" alt="Uma imagem de uma casa" data-aos="fade-left" data-aos-duration="750" data-aos-easing="ease-in-sine">
+                <img class="housers-img" src="img/houser_04.jpg" alt="Uma imagem de uma casa" data-aos="fade-right" data-aos-duration="750" data-aos-easing="ease-in-sine">
+                <img class="housers-img" src="img/houser_05.jpg" alt="Uma imagem de uma casa" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-sine">
+                <img class="housers-img" src="img/houser_06.jpg" alt="Uma imagem de uma casa" data-aos="fade-left" data-aos-duration="750" data-aos-easing="ease-in-sine">
             </picture>
         </section>
 
@@ -105,7 +106,7 @@
             </header>
         
             <section class="container container-testimonies">
-                <section class="card card-main">
+                <section class="card card-main" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine">
                     <div class="testimonies-profile">
                         <div class="testimonies-profile">
                             <img class="profile-image-main" src="img/testimonies-bianca.svg" alt="imagem de perfil">
@@ -123,7 +124,7 @@
                     </span>
                 </section>
         
-                <section class="testimonies-section">
+                <section class="testimonies-section" data-aos="fade-left" data-aos-duration="650" data-aos-easing="ease-in-sine" data-aos-delay="25">
                     <section class="card card-testimonies">
                         <div class="testimonies-profile">
                             <img class="profile-image" src="img/testimonies-nicolas.svg" alt="imagem de perfil">
@@ -177,7 +178,7 @@
                     <img src="img/contact-image.jpg" alt="Uma imagem de uma casa">
                 </picture>
     
-                <form class="contact-form">
+                <form class="contact-form" data-aos="zoom-in-up" data-aos-duration="600" data-aos-easing="ease-in-sine">
                     <label>
                         <div class="form-topic">
                             <img src="img/contact-email.svg">
@@ -241,5 +242,11 @@
     </main>
 
     <script src="js/menu_responsivo.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
