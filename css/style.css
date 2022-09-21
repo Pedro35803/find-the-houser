@@ -55,7 +55,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5px
+    gap: 40px 10px;
 }
 
 .container-housers {
@@ -367,9 +367,9 @@
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .benefits {
-        height: 600px;
+        height: auto;
         padding: 75px 0;
     }
 
