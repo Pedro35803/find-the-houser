@@ -26,12 +26,9 @@
     position: relative;
 }
 
-.footer-text {
-    text-align: center;
-}
-
 .footer-link {
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-copyright {
@@ -71,5 +68,9 @@
         width: 375px;
         height: 2px;
         margin: 20px 0;
+    }
+    
+    .footer-text {
+        text-align: center;
     }
 }
