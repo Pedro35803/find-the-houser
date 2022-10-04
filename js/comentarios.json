@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Bianca Silva Cunha",
+        "urlImage": "img/testimonies-bianca.svg",
+        "textCommentary": "Comprei minha casa através do Find the House, além de fazer o maior investimento da minha vida, consegui economizar muito mais!"
+    },
+    {
+        "name": "Nicolas Martins Ferreira",
+        "urlImage": "img/testimonies-nicolas.svg",
+        "textCommentary": "Ao comprar minha casa pelo Find the House, percebir que estava indo pelo caminho certo, fico feliz de poder existir um serviço tão bom."
+    },
+    {
+        "name": "Amanda Cardoso Melo",
+        "urlImage": "img/testimonies-amanda.svg",
+        "textCommentary": "Eu estava com muita dificuldade na escolha da minha casa, o Find the House apareceu como uma luz no final do tunel, me ajudou a conquistar a casa própria."
+    },
+    {
+        "name": "Martim Sousa Rodrigues",
+        "urlImage": "img/testimonies-martim.svg",
+        "textCommentary": "Com uma qualidade altissima este serviço consegue diferenciar de todos os outros, se eu fosse você também daria uma chance!"
+    }
+]
