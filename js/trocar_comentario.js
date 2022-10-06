@@ -3,6 +3,15 @@ import comentarios from './comentarios.json' assert { type: "json" };
 const comment = document.querySelectorAll(".card-testimonies")
 
 comment.forEach(element => element.addEventListener("click", () => {
+    changeTextCommentary(element)
+    if(element.style.animation) {
+        element.style.animation = "";
+    } else {
+        element.style.animation = "moving-commentary .4s ease"
+    }
+}))
+
+const changeTextCommentary = (element) => {
     const nameElement = element.querySelector(".profile-name")
     const nameMain = document.querySelector(".card-main  .profile-name-main")
 
@@ -21,4 +30,4 @@ comment.forEach(element => element.addEventListener("click", () => {
 
     const commentMain = document.querySelector(".card-main  .commentary-text")
     commentMain.textContent = elementJson.textCommentary
-}))
+}

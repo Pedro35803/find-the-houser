@@ -116,7 +116,7 @@
     cursor: pointer;
     position: absolute;
     align-self: center;
-    animation: arrow 4s infinite;
+    animation: arrow 2.5s infinite;
 }
 
 /* 
@@ -286,6 +286,21 @@
 
     background: var(--color-tertiary);
     border-radius: 50px;
+}
+
+/*
+* Animação dos cards menores
+*/
+
+@keyframes moving-commentary {
+    0% {
+        translate: 0;
+        opacity: 1;
+    }
+    100% {
+      translate: -100%;
+      opacity: 0;
+    }
 }
 
 /* Container Contatos */
