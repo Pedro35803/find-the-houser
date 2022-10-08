@@ -6,6 +6,7 @@
     height: min(85vh, 750px);
     background: var(--color-primary) url(../img/start_bg.jpg) no-repeat;
     background-position: center 100%;
+    background-size: cover;
 }
 
 .benefits,
@@ -105,9 +106,12 @@
 .start-title {
     width: min(100%, 24ch);
     color: var(--color-tertiary);
+
     font-weight: bold;
     font-size: 64px;
+
     line-height: 1em;
+    letter-spacing: 0.03em;
 }
 
 .start-arrow {
@@ -244,7 +248,7 @@
 }
 
 .commentary-text {
-    line-height: 1em;
+    line-height: 140%;
     font-size: 18px;
 }
 
@@ -355,6 +359,7 @@
 
 .title {
     font-size: 42px;
+    letter-spacing: 0.03em;
 }
 
 .paragraph {
@@ -394,6 +399,7 @@
 }
 
 .input-area {
+    padding-top: 10px;
     height: 150px;
     font-family: var(--font);
     resize: none;
@@ -469,6 +475,10 @@
 
     .profile-picture {
         display: none;
+    }
+
+    .commentary-text {
+        font-size: 16px;
     }
 }
 
