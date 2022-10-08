@@ -1,7 +1,7 @@
 @import url(config_global.css);
 
 .nav {
-    height: clamp(70px, 15vh, 125px);
+    height: 15vh;
     background-color: var(--preto);
 }
 
