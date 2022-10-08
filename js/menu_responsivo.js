@@ -16,6 +16,7 @@ const animateLinks = () => {
 
 iconHamburgue.addEventListener("click", () => {
     iconHamburgue.classList.toggle("active");
+    document.body.style.overflow = !menuControl.checked ? "hidden" : "initial";
     animateLinks();
 });
 
@@ -24,5 +25,6 @@ links.forEach(link => link.addEventListener("click", () => {
     if (menuControl.checked && larguraTela <= 775) {
         menuControl.checked = false;
         iconHamburgue.classList.toggle("active");
+        document.body.style.overflow = "initial";
     }
 }));

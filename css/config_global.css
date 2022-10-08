@@ -21,6 +21,7 @@ body {
     background: var(--color-tertiary);
     color: var(--color-primary);
     font-family: var(--font);
+    transition: overflow 0.5s ease;
 }
 
 @font-face {

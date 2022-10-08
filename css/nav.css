@@ -92,8 +92,11 @@
 /* Responsividade */
 
 @media (max-width: 775px) {
-    .nav {
+    body {
         --_tam_nav: 80px;
+    }
+    
+    .nav {
         width: 100%;
         position: fixed;
         top: 0;
