@@ -17,6 +17,7 @@
 }
 
 body {
+    --_tam_nav: 100px;
     background: var(--color-tertiary);
     color: var(--color-primary);
     font-family: var(--font);

@@ -3,7 +3,7 @@
 @import url(nav.css);
 
 .start {
-    height: 85vh;
+    height: calc(100vh - var(--_tam_nav));
     background: var(--color-primary) url(../img/start_bg.jpg) no-repeat;
     background-position: center 100%;
     background-size: cover;
