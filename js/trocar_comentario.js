@@ -1,14 +1,9 @@
-import comentarios from './comentarios.json' assert { type: "json" }; 
+import comentarios from './comentarios.json' assert { type: "json" }
 
 const comment = document.querySelectorAll(".card-testimonies")
 
 comment.forEach(element => element.addEventListener("click", () => {
     changeTextCommentary(element)
-    if(element.style.animation) {
-        element.style.animation = "";
-    } else {
-        element.style.animation = "moving-commentary .4s ease"
-    }
 }))
 
 const changeTextCommentary = (element) => {
