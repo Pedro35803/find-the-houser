@@ -34,14 +34,8 @@
 
 /* Desenhando o menu hamburgue */
 
-.menu-hamburguer {
-    background-color: var(--color-primary);
-    border-radius: 50px;
-    padding: 2px;
-}
-
 .hamburguer-line {
-    background: var(--preto);
+    background: var(--color-primary);
     width: 25px;
     height: 3px;
     
@@ -162,7 +156,7 @@
 
 @media (max-width: 550px) {
     .menu {
-        width: 100vw;
+        width: 85vw;
     }
 
     .menu-links {
