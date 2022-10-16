@@ -1,11 +1,11 @@
 const iconHamburgue = document.querySelector(".menu-hamburguer");
-const menuLinks = document.querySelectorAll(".menu-links li");
 const menuControl = document.querySelector("#menu-control");
 const links = document.querySelectorAll(".links-menu");
 
-const animateLinks = () => {
+const controlAnimate = () => {
+    const menuLinks = document.querySelectorAll(".menu-links li");
     menuLinks.forEach((link, index) => {
-        if(link.style.animation) {
+        if (link.style.animation) {
             link.style.animation = "";
         } else {
             const calcTempEntry = index / 6 + 0.3;
@@ -17,7 +17,7 @@ const animateLinks = () => {
 iconHamburgue.addEventListener("click", () => {
     iconHamburgue.classList.toggle("active");
     document.body.style.overflow = !menuControl.checked ? "hidden" : "initial";
-    animateLinks();
+    controlAnimate();
 });
 
 links.forEach(link => link.addEventListener("click", () => {
@@ -26,5 +26,6 @@ links.forEach(link => link.addEventListener("click", () => {
         menuControl.checked = false;
         iconHamburgue.classList.toggle("active");
         document.body.style.overflow = "initial";
+        controlAnimate();
     }
 }));
